@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Word Translategit init</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="text-input">
+          <textarea
+            name="input"
+            class="from-text"
+            id="InputText"
+            cols="30"
+            rows="12"
+            placeholder="Enter your Text"
+          ></textarea>
+          <textarea
+            name="input"
+            class="to-text"
+            id="TranslateText"
+            cols="30"
+            rows="12"
+            placeholder="Translation"
+            readonly
+            disabled
+          ></textarea>
+        </div>
+        <ul class="controls">
+          <li class="row from">
+            <div class="icons">
+              <span class="material-symbols-outlined" id="from">
+                volume_up
+              </span>
+              <span class="material-symbols-outlined fa-copy" id="from">
+                content_copy
+              </span>
+            </div>
+            <select></select>
+          </li>
+          <li class="exchange">
+            <span class="material-symbols-outlined"> question_exchange </span>
+          </li>
+          <li class="row to">
+            <select></select>
+            <div class="icons">
+              <span class="material-symbols-outlined" id="to"> volume_up </span>
+              <span class="material-symbols-outlined fa-copy" id="to"> content_copy </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <button>Translate Text</button>
+    </div>
+    <script src="./countries.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
